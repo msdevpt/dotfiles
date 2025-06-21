@@ -1,0 +1,222 @@
+* {
+  border-radius: .7rem;
+  font-family: "Inter Medium", Roboto, monospace;
+  font-size: 12px;
+}
+
+#waybar {
+  background-color: rgba(40, 40, 40, 0.6);
+} 
+
+#clock {
+  background-color: rgba(40, 40, 40, 0.6);
+  border-radius: 8px;
+  padding: 4px 10px;
+  margin: 4px;
+  min-width: 128px;
+}
+
+tooltip label {
+  color: white;
+}
+
+/* -----------------------------------------------------
+ * Custom Exit
+ * ----------------------------------------------------- */
+
+#workspaces {
+  margin: 2px;
+  padding-left: 4px;
+  padding-right: 4px; 
+}
+
+#workspaces button {
+  padding: 0 4px;
+  background: transparent;
+  border-bottom: 3px solid transparent;
+}
+
+#workspaces button.focused {
+  background: #64727d;
+  border-bottom: 3px solid white;
+} 
+
+#pulseaudio {
+  margin: 2px;
+  padding-left: 4px;
+  padding-right: 4px; 
+  padding-top: 4px;
+}
+
+#mode,
+#battery {
+  padding: 0 8px;
+}
+
+#mode {
+  border-bottom: 3px solid white;
+} 
+
+#custom-weather-new {
+  background-color: rgba(40, 40, 40, 0.6);
+  border-radius: 8px;
+  padding: 4px 10px;
+  margin: 4px;
+}
+
+#custom-exit {
+  font-family: "Font Awesome 6 Free";
+  margin: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#wireplumber,
+#custom-media,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#custom-logo,
+#custom-caway,
+#custom-updates,
+#memory,
+#temperature,
+#hyprland-workspaces,
+#custom-cava-mviz,
+#mpd {
+  margin: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
+
+#battery icon {
+  color: red;
+}
+
+#battery.charging,
+#battery.plugged {
+  color: black;
+  background-color: #26a65b;
+}
+
+@keyframes blink {
+  to {
+    background-color: black;
+    color: white;
+  }
+}
+
+#battery.warning:not(.charging) {
+  background-color: #f53c3c;
+  color: black;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#battery.critical:not(.charging) {
+  background-color: #f53c3c;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+label:focus {
+  background-color: #000000;
+}
+
+#network.disconnected {
+  background-color: #f53c3c;
+}
+
+#temperature.critical {
+  background-color: #eb4d4b;
+}
+
+#idle_inhibitor.activated {
+  background-color: #ecf0f1;
+  color: #2d3436;
+}
+
+#tray > .active {
+  color: white;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+  color: #eb4d4b;
+  background-color: #eb4d4b;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  color: #eb4d4b;
+  background-color: #eb4d4b;
+}
+
+#tray {
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-right: 4px;
+}
+
+#tray menu {
+  border-radius: 8px;
+}
+
+#custom-os_button {
+  font-size: 32px;
+  transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#custom-os_button:hover {
+  background: white;
+  color: black;
+}
+
+#custom-weather.severe {
+    color: #eb937d;
+}
+
+#custom-weather.sunnyDay {
+    color: #c2ca76;
+}
+
+#custom-weather.clearNight {
+    color: #2b2b2a;
+}
+
+#custom-weather.cloudyFoggyDay, #custom-weather.cloudyFoggyNight {
+    color: #c2ddda;
+}
+
+#custom-weather.rainyDay, #custom-weather.rainyNight {
+    color: #5aaca5;
+}
+
+#custom-weather.snowyIcyDay, #custom-weather.snowyIcyNight {
+    color: #d6e7e5;
+}
+
+#custom-weather.default {
+    color: #dbd9d8;
+}
