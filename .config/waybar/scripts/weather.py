@@ -17,7 +17,7 @@ import sys
 ### CONSTANTS ###
 
 # api key - get it at https://openweathermap.org/
-API_KEY = "<change-me>"
+API_KEY = "d29ec18126bc2724a4f19c2ca434e1d6"
 
 # latitude and longitude of the city you want to query
 # can be obtained through `./weather.py geocoding <city[,state,country]>`
@@ -406,7 +406,7 @@ def waybar_widget(data: dict) -> str:
     temperature = round(data['main']['temp'])
     icon = weather_icons.get(weather, "❓")  # Ícone padrão
 
-    return f' {temperature}° {icon} '
+    return f' {icon} {temperature}° '
 
     return f'{colorize(weather, RED)} {temperature}°'
 
