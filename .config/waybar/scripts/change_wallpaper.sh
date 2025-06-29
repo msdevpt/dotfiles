@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# WALLPAPER_DIRECTORY=~/Pictures/Wallpapers/
 WALLPAPER_DIRECTORY=~/.config/backgrounds/
 
 WALLPAPER=$(find "$WALLPAPER_DIRECTORY" -type f | shuf -n 1)
