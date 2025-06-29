@@ -8,7 +8,6 @@ My linux configuration files.
 - [Walker](https://github.com/abenz1267/walker)
 - [Fish](https://fishshell.com/)
 - [Hyprlock](https://github.com/hyprwm/hyprlock/)
-- [Waybar](https://github.com/Alexays/Waybar)
 - [MPV](https://github.com/mpv-player/mpv)
 
 Terminal i'm using:
@@ -28,17 +27,21 @@ Terminal i'm using:
 
 `Super+Enter` - Open Terminal
 
-`Super+Space` - Open App Launcher (Wofi)
+`Super+Space` - Open App Launcher ([Walker](https://github.com/abenz1267/walker))
 
 `Super+M` - Menu Quit, Restart, Suspend,...
  
-`Super+C` - Close
+`Super+Q` - Close
 
 `Super+F` - Fullscreen
 
 `Super+V` - Popout
 
 `Super+W` - Random Wallpaper
+
+`Super+Z` - Zen Browser
+
+`Super+E` - Thunar file manager
 
 
 ## Set API Key in:
