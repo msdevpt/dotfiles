@@ -17,7 +17,7 @@ import sys
 ### CONSTANTS ###
 
 # api key - get it at https://openweathermap.org/
-API_KEY = "d29ec18126bc2724a4f19c2ca434e1d6"
+API_KEY = "<change-me>"
 
 # latitude and longitude of the city you want to query
 # can be obtained through `./weather.py geocoding <city[,state,country]>`
