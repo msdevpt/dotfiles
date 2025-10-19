@@ -2,10 +2,10 @@
 
 My linux configuration files.
 
-- [NeoVim](https://neovim.io/)
+- [Niri](https://github.com/YaLTeR/niri)
 - [Hyprland](https://hyprland.org/)
-- [Waybar](https://github.com/Alexays/Waybar)
-- [Walker](https://github.com/abenz1267/walker)
+- [Noctalia](https://github.com/noctalia-dev/noctalia-shell)
+- [NeoVim](https://neovim.io/)
 - [Fish](https://fishshell.com/)
 - [Hyprlock](https://github.com/hyprwm/hyprlock/)
 - [MPV](https://github.com/mpv-player/mpv)
@@ -27,7 +27,7 @@ Terminal i'm using:
 
 `Super+Enter` - Open Terminal
 
-`Super+Space` - Open App Launcher ([Walker](https://github.com/abenz1267/walker))
+`Super+Space` - Open App Launcher
 
 `Super+M` - Menu Quit, Restart, Suspend,...
  
@@ -42,7 +42,3 @@ Terminal i'm using:
 `Super+Z` - Zen Browser
 
 `Super+E` - Thunar file manager
-
-
-## Set API Key in:
-`.config/waybar/scripts/weather.py`
