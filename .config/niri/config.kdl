@@ -167,13 +167,13 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#6cd3f8"
+        active-color "#bfc6db"
 
         // Color of the ring on inactive monitors.
         //
         // The focus ring only draws around the active window, so the only place
         // where you can see its inactive-color is on other monitors.
-        inactive-color "#1b2023"
+        inactive-color "#1f1f21"
 
         // You can also use gradients. They take precedence over solid colors.
         // Gradients are rendered the same as CSS linear-gradient(angle, from, to).
@@ -182,13 +182,13 @@ layout {
         // You can use any CSS linear-gradient tool on the web to set these up.
         // Changing the color space is also supported, check the wiki for more info.
         //
-        active-gradient from="#6cd3f8" to="#a8ccdc" angle=45
+        active-gradient from="#bfc6db" to="#c5c6cf" angle=45
 
         // You can also color the gradient relative to the entire view
         // of the workspace, rather than relative to just the window itself.
         // To do that, set relative-to="workspace-view".
         //
-        // inactive-gradient from="#1b2023" to="#a8ccdc" angle=45 relative-to="workspace-view"
+        // inactive-gradient from="#1f1f21" to="#c5c6cf" angle=45 relative-to="workspace-view"
     }
 
     // You can also add a border. It's similar to the focus ring, but always visible.
@@ -198,8 +198,8 @@ layout {
         off
 
         width 2
-        active-color "#6cd3f8"
-        inactive-color "#1b2023"
+        active-color "#bfc6db"
+        inactive-color "#1f1f21"
 
         // Color of the border around windows that request your attention.
         urgent-color "#9b0000"
@@ -207,9 +207,9 @@ layout {
         // Gradients can use a few different interpolation color spaces.
         // For example, this is a pastel rainbow gradient via in="oklch longer hue".
         //
-        active-gradient from="#6cd3f8" to="#a8ccdc" angle=45 relative-to="workspace-view" in="oklch longer hue"
+        active-gradient from="#bfc6db" to="#c5c6cf" angle=45 relative-to="workspace-view" in="oklch longer hue"
 
-        inactive-gradient from="#1b2023" to="#a8ccdc" angle=45 relative-to="workspace-view"
+        inactive-gradient from="#1f1f21" to="#c5c6cf" angle=45 relative-to="workspace-view"
     }
 
     // You can enable drop shadows for windows.
@@ -379,6 +379,8 @@ binds {
     Mod+L { spawn "qs" "-c" "noctalia-shell-dev" "ipc" "call" "lockScreen" "toggle"; }
     Mod+W { spawn "qs" "-c" "noctalia-shell-dev" "ipc" "call" "wallpaper" "random"; }
     Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
+    Mod+E hotkey-overlay-title="Open thunar" { spawn "thunar"; }
+    Mod+Z hotkey-overlay-title="Open zen browser" { spawn "app.zen_browser.zen"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
