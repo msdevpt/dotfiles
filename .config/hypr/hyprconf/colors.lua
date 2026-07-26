@@ -1,0 +1,14 @@
+-- ============================================================================
+-- Colors placeholder.
+-- O `apply-colors.sh` continua a escrever `~/.config/hypr/colors.conf`
+-- para a Niri, mas este ficheiro já não é carregado pelo Hyprland
+-- (NÃO usamos `source` no Lua). As cores ficam em fallback em look.lua.
+--
+-- Para cor dinâmica no Hyprland no futuro: o hook wallpaperChange do
+-- Noctalia pode executar adicionalmente
+--   hyprctl keyword general:col.active_border <hex>
+--   hyprctl keyword general:col.inactive_border <hex>
+-- quando o wallpaper muda.
+-- ============================================================================
+
+-- vazio por agora
